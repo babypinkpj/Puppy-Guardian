@@ -2040,40 +2040,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 4
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &607994569
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,11 +2316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NoiseProfile: {fileID: 11400000, guid: 0df106b68af50fe4b83e4450e936d440, type: 2}
-  m_PivotOffset: {x: 0, y: 0, z: 0}
-  m_AmplitudeGain: 0
-  m_FrequencyGain: 0
-  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &690019229
 GameObject:
   m_ObjectHideFlags: 0
@@ -2570,62 +2531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67b0c4ddf3f18041863d1c513de2f12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startspawn: {fileID: 714230934}
-  isStartgame: 0
-  isPausing: 0
-  gameCountdown: 3
-  transition: {fileID: 1606079527}
-  countdowntext: {fileID: 1259236296}
-  text: {fileID: 1259236298}
-  countdownanima: {fileID: 1259236300}
-  darkBG: {fileID: 814828735}
-  mainUI: {fileID: 1311022216}
-  pauseUI: {fileID: 2039416555}
-  healItem: {fileID: 659515300605693573, guid: 89d880f26648fff45a26e7b1ed895762, type: 3}
-  spawnTimer: 60
-  despawnTimer: 30
-  healPosition:
-  - {fileID: 824311380}
-  - {fileID: 2094809755}
-  - {fileID: 561919833}
-  - {fileID: 1102519768}
-  - {fileID: 434801492}
-  virtualCamera: {fileID: 919145532}
-  setShakeAmplitude: 10
-  setShakeFrequency: 50
-  setShakeDuration: 2
-  FieldOfView: 65
-  startDuration: 4
-  startColor: {r: 0.02277422, g: 1, b: 0, a: 1}
-  endColor: {r: 0.023529412, g: 1, b: 0, a: 0}
-  colorDuration: 1
-  startgameImage: {fileID: 0}
-  blackColorStart: {r: 0, g: 0, b: 0, a: 0}
-  blackColorEnd: {r: 0, g: 0, b: 0, a: 1}
-  blackImage: {fileID: 978562259}
-  appearDuration: 2
-  HarmImage: {fileID: 530978038}
-  HarmColorStart: {r: 0.54901963, g: 0.23529412, b: 0.23529412, a: 1}
-  HarmColorEnd: {r: 0.54901963, g: 0.23529412, b: 0.23529412, a: 0}
-  HarmDuration: 3.5
-  resumeButton: {fileID: 1327873938}
-  restartButton: {fileID: 422700132}
-  menuButton: {fileID: 854630731}
-  timerText: {fileID: 503417124}
-  gameTime: 240
-  isGameover: 0
-  restartButton1: {fileID: 1115785998}
-  menuButton1: {fileID: 917336792}
-  gameoverAnimation: {fileID: 918788887}
-  isTimeup: 0
-  gameoverdesc: {fileID: 1342375046}
-  audioGameplay: {fileID: 2135155208}
-  chaoscooldown: 30
-  chaosInfo: {fileID: 1152454739}
-  conditioning: 0
-  isJustice: 0
-  isRobust: 0
-  isCatthief: 0
 --- !u!1 &740117766
 GameObject:
   m_ObjectHideFlags: 0
@@ -3589,33 +3494,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_StreamingVersion: 20170927
-  m_Priority: 10
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
-  m_Lens:
-    FieldOfView: 65
-    OrthographicSize: 5
-    NearClipPlane: 0.3
-    FarClipPlane: 1000
-    Dutch: 0
-    ModeOverride: 0
-    LensShift: {x: 0, y: 0}
-    GateFit: 2
-    FocusDistance: 10
-    m_SensorSize: {x: 1, y: 1}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-  m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 650793938}
 --- !u!4 &919145533
 Transform:
   m_ObjectHideFlags: 0
@@ -5428,7 +5306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1311022212
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6865,24 +6743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c0ceeefeb696f2448e41eeb4963d795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1566587855
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7645,56 +7505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68226a56c50d9c54fa73daa4cd3ca49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 30
-  eventName1: WEIGHT DOWN
-  eventDesc1: Player runs slower
-  num1_1: 15
-  color1: {r: 0.24096651, g: 0.4434494, b: 0.5377358, a: 1}
-  eventName2: SUPER CONDITIONING
-  eventDesc2: Robber gets stunned shorter
-  num2_1: 30
-  color2: {r: 0.5943396, g: 0.23829654, b: 0.43244496, a: 1}
-  eventName3: PIGEON INVADE
-  eventDesc3: Pigeons interrupt you
-  pigeonSpawner:
-  - {fileID: 216009150}
-  - {fileID: 2084472782}
-  - {fileID: 1002720596}
-  - {fileID: 638501138}
-  - {fileID: 1398042457}
-  - {fileID: 163168407}
-  - {fileID: 1882042189}
-  - {fileID: 1207323433}
-  pigeon: {fileID: 9065713071626946765, guid: 0010e214ac0ccee4f8afcbd4a552629e, type: 3}
-  isPigeonActive: 0
-  spawnCooldown: 0.45
-  color3: {r: 0.19339621, g: 0.9490082, b: 1, a: 1}
-  eventName4: LIGHT OUT
-  eventDesc4: Decrease visibility
-  light: {fileID: 1975625765}
-  lightscree: {fileID: 361465449}
-  flash: {fileID: 489957354}
-  color4: {r: 1, g: 0.88641727, b: 0.3160377, a: 1}
-  eventName5: JUSTICE
-  eventDesc5: Player's attack is stronger when has 25% of HP
-  num5_1: 15
-  color5: {r: 1, g: 0.1462264, b: 0.20986234, a: 1}
-  eventName6: ROBUST
-  eventDesc6: Robber attack stronger
-  num6_1: 20
-  color6: {r: 1, g: 0.5300038, b: 0.1462264, a: 1}
-  eventName7: DIRTY DUTY
-  eventDesc7: Player gets stunned longer
-  num7_1: 15
-  color7: {r: 0.91757876, g: 0.2688679, b: 1, a: 1}
-  eventName8: CAT THIEF
-  eventDesc8: Robber sneaks and steals faster
-  num8_1: 20
-  color8: {r: 0.2688679, g: 0.38835403, b: 1, a: 1}
-  eventName9: TIREDNESS
-  eventDesc9: Player's abilities cooldown are longer
-  num9_1: 25
-  color9: {r: 0.26205945, g: 0.34123942, b: 0.3679245, a: 1}
 --- !u!4 &1703135237
 Transform:
   m_ObjectHideFlags: 0
@@ -8266,12 +8076,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1975625765 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4487079999443173140, guid: ad3c827db3d0538438542c4bc419acf9,
-    type: 3}
-  m_PrefabInstance: {fileID: 525703152586596553}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2039416550
 GameObject:
   m_ObjectHideFlags: 0
@@ -8430,16 +8234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8343060b582d3894d95cb5cdc22b1bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventname: {fileID: 281598559}
-  description: {fileID: 1681172967}
-  eventnameobject: {fileID: 281598557}
-  descriptionobject: {fileID: 1681172965}
-  playerMovement: {fileID: 218122779}
-  gameManager: {fileID: 714230937}
-  slownessChaos: 85
-  ChoasDuration: 30
-  animator: {fileID: 2089000496}
-  activateChaosMode: 1
 --- !u!4 &2060699774
 Transform:
   m_ObjectHideFlags: 0
@@ -8797,22 +8591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d30ec27eb53c6364fb31afc8104de7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songSource: {fileID: 1719113618}
-  song: {fileID: 8300000, guid: 1d9fcd92df248e541812d249a7ab21af, type: 3}
-  gameoverSong: {fileID: 8300000, guid: 9e1ad1eb309f9d747b71d08e50e4e47a, type: 3}
-  SFXSource: {fileID: 961253279}
-  sfxCountdown: {fileID: 8300000, guid: 9f86c71b7249d8a468a0a20266cb8a61, type: 3}
-  sfxRiser: {fileID: 8300000, guid: c559fd4f60068e44fa709f8212b3136e, type: 3}
-  sfxGameStart: {fileID: 8300000, guid: eb9dccde528193f47ad0b29dd73fa995, type: 3}
-  sfxHover: {fileID: 8300000, guid: 451ed5f4e6cb6c442b7f286dde4eeeef, type: 3}
-  sfxClick: {fileID: 8300000, guid: 0d873a85254c3f34ca9b2ef57a61b6eb, type: 3}
-  sfxchaos: {fileID: 8300000, guid: 4c0638ac0c1d1ae45893edb3e883c6b3, type: 3}
-  sfxpowerdown: {fileID: 8300000, guid: bbc75d0a92f060341b702c09d5bae262, type: 3}
-  sfxbirds: {fileID: 8300000, guid: 351ecc0a4cfd07445b1ad964e329bbef, type: 3}
-  sfxNear: {fileID: 8300000, guid: 9621f76bcf39b7a4ebb3ee0b199b0b96, type: 3}
-  sfxCountdown10: {fileID: 8300000, guid: 2671f7c20508ea142b613d021e1f1b78, type: 3}
-  sfxTime: {fileID: 8300000, guid: 641372d894f08b84e8e62ee20f93368a, type: 3}
-  sfxHeal: {fileID: 8300000, guid: f386b014103aa104d9602109dbd6242a, type: 3}
 --- !u!4 &2135155209
 Transform:
   m_ObjectHideFlags: 0
