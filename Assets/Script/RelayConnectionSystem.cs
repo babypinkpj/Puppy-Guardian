@@ -36,6 +36,7 @@ public class RelayConnectionSystem : MonoBehaviour
     [Header("Settings")]
     [Tooltip("Max players allowed in the game")]
     public int maxPlayers = 4;
+    public TMP_Dropdown characterDropdown;
     
     [Tooltip("Unity Services Profile Name (use different profiles if testing on same machine)")]
     public string authProfileName = "default";
@@ -43,6 +44,7 @@ public class RelayConnectionSystem : MonoBehaviour
     [Tooltip("The name of the Lobby to search or create")]
     public string lobbyName = "PuppyGuardianLobby";
 
+    public GameObject loginPanel;
     private Lobby currentLobby;
     private Coroutine lobbyHeartbeatCoroutine;
     private const string JoinCodeKey = "RelayJoinCode";
@@ -187,7 +189,8 @@ public class RelayConnectionSystem : MonoBehaviour
             {
                 {
                     JoinCodeKey,
-                    new DataObject(DataObject.VisibilityOptions.Member, relayJoinCode)
+                   new DataObject(DataObject.VisibilityOptions.Public, relayJoinCode)
+
                 }
             }
         };
@@ -214,11 +217,24 @@ public class RelayConnectionSystem : MonoBehaviour
     /// <summary>
     /// Set the player's username as connection data payload so the server can track/display names.
     /// </summary>
-    private void SetConnectionPayload(string username)
+   private void SetConnectionPayload(string username)
+{
+    if (string.IsNullOrWhiteSpace(username))
     {
-        byte[] payloadBytes = Encoding.UTF8.GetBytes(username);
-        NetworkManager.Singleton.NetworkConfig.ConnectionData = payloadBytes;
+        username = "Player_" + UnityEngine.Random.Range(1000, 9999);
     }
+
+    // ดึงค่า Index จาก Dropdown เมนูเลือกตัวละคร (0=Shiba, 1=Pug, 2=Duchun, 3=Husky, 4=Robber)
+    int charId = characterDropdown != null ? characterDropdown.value : 0;
+    
+    // รวมร่างข้อมูลเป็นฟอร์แมต Username|CharacterID ตัวอย่างเช่น "MOOK|1"
+    string payloadString = $"{username}|{charId}";
+    
+    Debug.Log($"[RelayConnection] Setting payload: {payloadString}");
+    
+    // ส่งข้อมูลเข้าสู่ระบบ NetworkConfig เพื่อให้ Server แกะอ่านตอนขอเข้าห้อง
+    NetworkManager.Singleton.NetworkConfig.ConnectionData = Encoding.UTF8.GetBytes(payloadString);
+}
 
     /// <summary>
     /// Sends a ping every 15 seconds to keep the Unity Lobby active.
@@ -327,6 +343,7 @@ public class RelayConnectionSystem : MonoBehaviour
 
     private void UpdateUIOnConnected(bool isConnected)
     {
+         if (loginPanel != null) loginPanel.SetActive(!isConnected); 
         if (leaveButton != null) leaveButton.gameObject.SetActive(isConnected);
         if (startButton != null) startButton.gameObject.SetActive(!isConnected);
         if (usernameInput != null) usernameInput.interactable = !isConnected;
@@ -334,6 +351,7 @@ public class RelayConnectionSystem : MonoBehaviour
 
     private void ResetUIState()
     {
+        if (loginPanel != null) loginPanel.SetActive(true); 
         if (leaveButton != null) leaveButton.gameObject.SetActive(false);
         if (startButton != null)
         {
