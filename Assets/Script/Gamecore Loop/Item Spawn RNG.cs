@@ -10,6 +10,10 @@ public class ItemSpawnRNG : MonoBehaviour
     {
         StartSpawnItem();
     }
+    public void setItem()
+    {
+        StartSpawnItem();
+    }
     void StartSpawnItem()
     {
         foreach (Transform transform in itemlocation)

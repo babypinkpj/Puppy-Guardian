@@ -9,6 +9,7 @@ public class RobberAI : MonoBehaviour
     [SerializeField] public Transform locateRobbing;
     [SerializeField] public Transform robberspawner;
     [SerializeField] public float stealingTimer = 10f;
+    public int attackpoint = 10;
 
     private void Start()
     {

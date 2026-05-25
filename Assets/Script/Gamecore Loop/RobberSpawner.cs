@@ -11,6 +11,10 @@ public class RobberSpawner : MonoBehaviour
     {
         spawner();
     }
+    public void triggerStartGame()
+    {
+        spawner();
+    }
     void spawner()
     {
         int setspawnlocate = Random.Range(0, robberspawner.Length);
