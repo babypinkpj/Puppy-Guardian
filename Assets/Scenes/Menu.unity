@@ -1754,7 +1754,7 @@ MonoBehaviour:
     type: 3}
   countdownText: {fileID: 118896908}
   readyButton: {fileID: 2023108221}
-  GameplaySceneName: GameScene
+  GameplaySceneName: Match
   customDogIcons:
   - {fileID: -720465255, guid: f27424ee753e4c04e9a71c512a5e1b3a, type: 3}
   - {fileID: 1326927566, guid: 14b484bb1f927a14e9ac88eb786d8d26, type: 3}
@@ -20310,11 +20310,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ConnectionManager
   ShowTopMostFoldoutHeaderGroup: 1
   characterPrefabs:
-  - {fileID: 1749101996471914238, guid: 45fe963daf33c524ca66801bdc2f4d71, type: 3}
-  - {fileID: 874793004748031898, guid: 5ba694719984be747a0cb42a600fea65, type: 3}
-  - {fileID: 8852406185646472838, guid: 49db3c4671509724f9631e0633df2a10, type: 3}
-  - {fileID: 657676205916603555, guid: d8f3c9340cbb40b4aa62e8663e376580, type: 3}
-  - {fileID: 6251734963847272285, guid: 3d571d57eccc3724cbd06f2f2c0ecf3b, type: 3}
+  - {fileID: 8094481725772370564, guid: 98f29f6379fb4d64bb92790c2b98746d, type: 3}
+  - {fileID: 5087022455728143660, guid: 398ec653aaddbce499581fc1ec1b6b68, type: 3}
+  - {fileID: 884992479985129455, guid: 65b50778ee1ae0f4b8dd3b4f909df3d1, type: 3}
+  - {fileID: 7088953946249419337, guid: 682bb8c7b7cd3c942bc4ece75a9a2f66, type: 3}
+  - {fileID: 2583469495535011367, guid: 47602fe4710359348969c8b2f55454b7, type: 3}
   ConnectedPlayers:
     UpdateTraits:
       MinSecondsBetweenUpdates: 0
